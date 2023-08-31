@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="http://octant.textiledigitizing.com/AdminStyle/assets/images/favicon.jpg">
+    <title>Octant | Admin | Dashboard</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- This page CSS -->
+    <!-- chartist CSS -->
+    <link href="http://octant.textiledigitizing.com/AdminStyle/assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+    <!--Toaster Popup message CSS -->
+    
+    <!-- Custom CSS -->
+    <link href="http://octant.textiledigitizing.com/AdminStyle/realestate/dist/css/style.css" rel="stylesheet">
+    <!-- Dashboard 1 Page CSS -->
+    <link href="http://octant.textiledigitizing.com/AdminStyle/realestate/dist/css/pages/dashboard1.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="skin-blue-dark fixed-layout">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="http://octant.textiledigitizing.com/dashboard">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="http://octant.textiledigitizing.com/AdminStyle/assets/images/octant-logo.jpg" alt="homepage"
+                                class="dark-logo" height="40px" width="90%" />
+                            <!-- Light Logo icon -->
+                            <img src="http://octant.textiledigitizing.com/AdminStyle/assets/images/octant-logo.jpg" alt="homepage"
+                                class="light-logo" height="40px" width="90%" />
+                        </b>
+                        <!--End Logo icon -->
+                        
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-sm-none waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a
+                                class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Comment -->
+                        <!-- ============================================================== -->
+                        
+                        <!-- ============================================================== -->
+                        <!-- End Comment -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- mega menu -->
+                        <!-- ============================================================== -->
+                        
+                        <!-- ============================================================== -->
+                        <!-- End mega menu -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- User Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown u-pro">
+                                                        <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href=""
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="http://octant.textiledigitizing.com/upload/AdminImages/1623513806download.jpg" alt="user" class=""> <span
+                                    class="hidden-md-down">Admin &nbsp;<i class="fa fa-angle-down"></i></span> </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                <!-- text-->
+                                
+                                <!-- text-->
+                                <a href="http://octant.textiledigitizing.com/account-settings" class="dropdown-item"><i
+                                        class="ti-settings"></i> Setting</a>
+                                <!-- text-->
+                                <div class="dropdown-divider"></div>
+                                <!-- text-->
+                                <a href="http://octant.textiledigitizing.com/logout" class="dropdown-item"><i class="fa fa-power-off"></i>
+                                    Logout</a>
+                                <!-- text-->
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End User Profile -->
+                        <!-- ============================================================== -->
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+
+                        <li> <a class="waves-effect waves-dark" href="http://octant.textiledigitizing.com/dashboard"><i
+                                    class="ti-home"></i><span class="hide-menu">Dashboard</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="http://octant.textiledigitizing.com/loan"><i
+                                    class="ti-plus"></i><span class="hide-menu">Add Loan</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="http://octant.textiledigitizing.com/borrowers"><i
+                                    class="ti-menu-alt"></i><span class="hide-menu">Borrower</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="http://octant.textiledigitizing.com/loan-type"><i
+                                    class="ti-layout"></i><span class="hide-menu">Loan Type</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="http://octant.textiledigitizing.com/credit-union"><i
+                                    class="ti-check-box"></i><span class="hide-menu">Credit Union</span></a>
+                        </li>
+                        
+                        <li> <a class="waves-effect waves-dark" href="http://octant.textiledigitizing.com/archived-loans"><i
+                                    class="ti-archive"></i><span class="hide-menu">Archives</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="http://octant.textiledigitizing.com/account-settings"><i
+                                    class="ti-settings"></i><span class="hide-menu">Account Setting</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="http://octant.textiledigitizing.com/logout"><i
+                                    class="ti-power-off"></i><span class="hide-menu">Logout</span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Session Content  -->
+            <!-- ============================================================== -->
+            <br>
+            <div class="col-md-12">
+                
+
+
+<section class="content">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="example23" class="display nowrap table table-hover table-striped table-bordered"
+                            cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Date Created</th>
+                                    <th>Loan Name</th>
+                                    <th>Loan Amount</th>
+                                    <th>Borrower Name</th>
+                                    <th>Status</th>
+                                    <th>Credit Union</th>
+                                    <th>Employee</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>2021-06-01</td>
+                                    <td>Loan Not Serviced</td>
+                                    <td>100000</td>
+                                    <td>Mike BWG</td>
+                                    <td>
+                                                                                <span class="badge badge-pill badge-success">pending</span>
+                                                                            </td>
+                                    <td>Athol Credit Union</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Session Content  -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer">
+            © 2021 Octant Pipeline
+        </footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="http://octant.textiledigitizing.com/AdminStyle/assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <script src="http://octant.textiledigitizing.com/AdminStyle/assets/node_modules/popper/popper.min.js"></script>
+    <script src="http://octant.textiledigitizing.com/AdminStyle/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="http://octant.textiledigitizing.com/AdminStyle/realestate/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="http://octant.textiledigitizing.com/AdminStyle/realestate/dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="http://octant.textiledigitizing.com/AdminStyle/realestate/dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="http://octant.textiledigitizing.com/AdminStyle/realestate/dist/js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--morris JavaScript -->
+    <script src="http://octant.textiledigitizing.com/AdminStyle/assets/node_modules/raphael/raphael-min.js"></script>
+    <script src="http://octant.textiledigitizing.com/AdminStyle/assets/node_modules/morrisjs/morris.min.js"></script>
+    <script src="http://octant.textiledigitizing.com/AdminStyle/assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- Popup message jquery -->
+    
+    <!-- Chart JS -->
+    <script src="http://octant.textiledigitizing.com/AdminStyle/realestate/dist/js/dashboard1.js"></script>
+    <!-- This is data table -->
+    <script src="http://octant.textiledigitizing.com/AdminStyle/assets/node_modules/datatables/jquery.dataTables.min.js"></script>
+
+    
+
+
+</body>
+
+</html>

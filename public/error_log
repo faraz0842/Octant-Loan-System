@@ -1,0 +1,4 @@
+[15-Jan-2022 17:22:29 UTC] PHP Warning:  require(/home/octant/public_html/../octantweb/vendor/autoload.php): failed to open stream: No such file or directory in /home/octant/public_html/index.php on line 34
+[15-Jan-2022 17:22:29 UTC] PHP Warning:  require(/home/octant/public_html/../octantweb/vendor/autoload.php): failed to open stream: No such file or directory in /home/octant/public_html/index.php on line 34
+[15-Jan-2022 17:22:29 UTC] PHP Fatal error:  require(): Failed opening required '/home/octant/public_html/../octantweb/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/octant/public_html/index.php on line 34
+[13-Apr-2022 06:52:19 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/octant/octantweb/storage/framework/views/7e6d4bf86f2cc9e4e7508bc341f171044ba7dedb.php on line 113
